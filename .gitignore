@@ -1,7 +1,10 @@
 # Arquivos e diretórios de compilação
 # O go build gera um executável com o nome da pasta/módulo.
 # Se o seu executável tem um nome fixo, adicione-o aqui.
-# Ex: meu-app
+
+go.sum
+go.mod
+
 /build/
 /bin/
 *.exe
