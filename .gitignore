@@ -1,9 +1,13 @@
-# Arquivos e diretórios de compilação
-# O go build gera um executável com o nome da pasta/módulo.
-# Se o seu executável tem um nome fixo, adicione-o aqui.
+# Build files and directories
+# go build generates an executable with the folder/module name.
+# If your executable has a fixed name, add it here.
 
 go.sum
 go.mod
+.tasks/
+tasks.csv
+tasks
+tests/
 
 /build/
 /bin/
@@ -13,27 +17,27 @@ go.mod
 *.so
 *.dylib
 
-# Dependências do Go Modules
-# A pasta 'vendor' é usada pelo comando `go mod vendor`.
-# A prática comum é NÃO incluir essa pasta no Git, pois os arquivos go.mod e go.sum
-# já definem as dependências. Descomente a linha abaixo se sua equipe prefere "vendorizar".
+# Go Modules dependencies
+# The 'vendor' folder is used by the `go mod vendor` command.
+# Common practice is NOT to include this folder in Git, since go.mod and go.sum
+# files already define dependencies. Uncomment the line below if your team prefers to "vendor".
 /vendor/
 
-# Arquivos de teste e cobertura de código
+# Test files and code coverage
 *.test
 /coverage.out
 /coverage.html
 
-# Arquivos de log
+# Log files
 *.log
 logs/
 
-# Arquivos de configuração de ambiente local
+# Local environment configuration files
 .env
 .env.*
 !/.env.example
 
-# Arquivos de sistema operacional
+# Operating system files
 .DS_Store
 Thumbs.db
 desktop.ini
