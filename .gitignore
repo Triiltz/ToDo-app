@@ -1,12 +1,11 @@
 # Build files and directories
 # go build generates an executable with the folder/module name.
 # If your executable has a fixed name, add it here.
-
+/tasks
 go.sum
 go.mod
 .tasks/
 tasks.csv
-tasks
 tests/
 
 /build/
